@@ -11,6 +11,9 @@ body {
     background-repeat: no-repeat;
 }
 
+/* --------------------------------------------------------------- */
+
+/* Primeira sessão do site - nome + capa */
 header {
     background: url("../../image/background.png"); 
     background-size: cover;
@@ -41,38 +44,75 @@ header {
     width: 100%;
 }
 
-.menu{
-    margin: 40px;
+/* --------------------------------------------------------------- */
+/* Menu grudado na esquerda */
+
+.menu {
+    padding: 20px 20px 0px 0px;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    z-index: 999;
 }
 
-.botao_sobre,.botao_projetos, .botao_contatos {
-    background-color: #D8CEE7;
-    margin: 20px;
-    width: 10%;
-    height: 200px;
-    border-radius: 30px;
-    color: #2A4AA1;
+.botao_sobre,
+.botao_projetos,
+.botao_contatos {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: hidden;
+    color: #333;
+    width: 60px; 
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    padding: 0 10px;
+    transition: width 0.4s ease, background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.ico_perfil, .ico_projeto, .ico_contato{
-    font-size: 90px;    
+.botao_sobre{
+    background-color: #FC3C76;
+}
+.botao_projetos{
+    background-color: #F7B109;
+}
+.botao_contatos{
+    background-color: #85D4CB;
 }
 
-
-.botao_sobre:hover{
-  background-color: aqua;
-  cursor: pointer;
+.botao_sobre:hover,
+.botao_projetos:hover,
+.botao_contatos:hover {
+    width: 200px; 
+    background-color: #FFEB99;
 }
 
-p {
+.botao_sobre span,
+.botao_projetos span,
+.botao_contatos span {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+    white-space: nowrap;
+}
+
+.botao_sobre:hover span,
+.botao_projetos:hover span,
+.botao_contatos:hover span {
+    opacity: 1;
+}
+
+span {
     font-family: "Bitcount Single", system-ui;
     font-optical-sizing: auto;
     font-size: 30px;
@@ -85,6 +125,9 @@ p {
         "ELXP" 0;
     
 }
+
+/* --------------------------------------------------------------- */
+/* Conteúdo do site*/
 
 .fundo_intro, .fundo_att {
     color: rgb(255, 255, 255);
@@ -111,12 +154,10 @@ p {
     border-radius: 0.5rem;
 }
 
-
 .txt_intro{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .github,.linkedin, .email {
@@ -124,10 +165,13 @@ p {
     color: #F4F0FC;
 }
 
+/* Efeito scrollreveal - static/javascript/reveal.js */
 .efeito_txt_topo, .efeito_botao_menu{
     visibility: hidden;
 }
 
+/* --------------------------------------------------------------- */
+/* Contatos - Última sessão */
 footer{
     background-color: #0b0713;
     width: 100vw;
