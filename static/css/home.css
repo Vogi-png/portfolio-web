@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -36,16 +37,36 @@ header {
 
 
 h1 {
-    font-family: 'Lobster', cursive; /* A alternativa é 'cursive' */
-    font-size: clamp(2.8rem, 5.5vw, 4.8rem);
-    font-weight: 400; /* Fontes script geralmente têm um único peso */
-    color: #31317a;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    /* Nunca use text-transform: uppercase com fontes script! */
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    color: blue;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
 }
 
 .github,.linkedin, .email {
     font-size: 5vh;
-    text-underline-offset: none;
+    color: #F4F0FC;
+}
+
+.efeito_txt_topo{
+    visibility: hidden;
+}
+
+footer{
+    background-color: #0b0713;
+    width: 100vw;
+    height: 100vh;
+}
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }

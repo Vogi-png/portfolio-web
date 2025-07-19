@@ -7,9 +7,13 @@
         <title>Minha Casa</title>
         <link rel="icon" type="image/svg+xml" href="../image/web_icon.svg">
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/scrollreveal"></script>     
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../static/css/home.css">
@@ -19,18 +23,32 @@
 
     <body>
         <header>
-            <div class="meu_nome">
-                <div class="funcao">
+            <div class="meu_nome efeito_txt_topo">
+                <div class="funcao efeito_txt_topo">
                 </div>
             </div>
         </header>
 
         <main>
-            <h1>Introdução</h1>
-            <h1>Últimas Atualizações</h1>
-            <h1>Sobre</h1>
-            <h2>Histórico Acadêmico</h2>
-            <h1>Projetos</h1>
+            <ul>    
+                <div class="botao_sobre">
+                <div class="botao_projetos"></div>
+                <div class="botao_contatos"></div>
+            </ul>>
+
+            <div class="conteudo">
+                
+                <h1 class="txt_intro">Introdução</h1>
+                <div class="txt_sobre">
+                    <h1>Sobre</h1>
+                    <h2>Histórico Acadêmico</h2>
+                </div>
+                <h1 class="txt_att">Últimas Atualizações</h1>
+                <h1 class="txt_projetos">Projetos</h1>
+
+            </div>
+            
+            
             <p>This is the home page of our website. Here you can find information about our services and how to contact us.</p>
         </main>
 
@@ -53,7 +71,8 @@
                 
             </div>
         </footer>
-        <script src="../static/javascript/home.js"></script>
+        <script src="../static/javascript/home.js" defer></script>
+        <script src="../static/javascript/reveal.js" defer></script>
     </body>
 
 </html>
