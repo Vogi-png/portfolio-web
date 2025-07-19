@@ -2,11 +2,11 @@
 *{
     box-sizing: border-box;
     overflow-x: hidden;
+    margin: 0;
 }
 
 body {
     min-height: 100vh;
-    margin: 0;
     background-color:#F4F0FC;
     background-repeat: no-repeat;
 }
@@ -15,8 +15,7 @@ header {
     background: url("../../image/background.png"); 
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    min-height: 100vh;
-    margin: 0;
+    min-height: 100%;
 }
 
 .meu_nome {
@@ -35,18 +34,89 @@ header {
     min-height: 100vh; 
 }
 
+.linha{
+    margin-top: 20px;
+    background-color: #ffbd42ba;
+    height: 1rem;
+    width: 100%;
+}
 
-h1 {
+.menu{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.botao_sobre,.botao_projetos, .botao_contatos {
+    background-color: #D8CEE7;
+    margin: 20px;
+    width: 10%;
+    height: 200px;
+    border-radius: 30px;
+    color: #2A4AA1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ico_perfil, .ico_projeto, .ico_contato{
+    font-size: 90px;    
+}
+
+
+.botao_sobre:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+
+p {
     font-family: "Bitcount Single", system-ui;
     font-optical-sizing: auto;
-    color: blue;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 350;
     font-style: normal;
     font-variation-settings:
         "slnt" 0,
         "CRSV" 0.5,
         "ELSH" 0,
         "ELXP" 0;
+    
+}
+
+.fundo_intro, .fundo_att {
+    color: rgb(255, 255, 255);
+    background-color: #F4AD79;
+    width: fit-content;
+    margin: 2rem auto; 
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: rgba(240, 107, 46, 0.4) -5px 5px, rgba(240, 117, 46, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.txt_sobre{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    width: 60%;
+    height: 100vh;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    border-radius: 0.5rem;
+}
+
+
+.txt_intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .github,.linkedin, .email {
@@ -54,7 +124,7 @@ h1 {
     color: #F4F0FC;
 }
 
-.efeito_txt_topo{
+.efeito_txt_topo, .efeito_botao_menu{
     visibility: hidden;
 }
 
