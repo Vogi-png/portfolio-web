@@ -1,0 +1,51 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color:#F4F0FC;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: url("../../image/background.png"); 
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.meu_nome {
+    background: url("../../image/nome.png"); 
+    background-repeat: no-repeat;
+    background-size: 80vh;
+    background-position: 125vh 15vw;
+    min-height: 100vh; 
+}
+
+.funcao {
+    background: url("../../image/fullstack.png");
+    background-repeat: no-repeat;
+    background-size: 45vh;
+    background-position: 156.6vh 31.2vw;
+    min-height: 100vh; 
+}
+
+
+h1 {
+    font-family: 'Lobster', cursive; /* A alternativa é 'cursive' */
+    font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+    font-weight: 400; /* Fontes script geralmente têm um único peso */
+    color: #31317a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    /* Nunca use text-transform: uppercase com fontes script! */
+}
+
+.github,.linkedin, .email {
+    font-size: 5vh;
+    text-underline-offset: none;
+}
