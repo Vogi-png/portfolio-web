@@ -8,3 +8,21 @@ revelar.reveal('.efeito_txt_topo',
     origin: 'right',
     distance: '50px',
 })
+
+revelar.reveal('.efeito_divp_topo', 
+{
+    duration: 2000,
+    delay: 200,
+})
+
+revelar.reveal('.efeito_divs_topo', 
+{
+    duration: 2000,
+    delay: 400,
+})
+
+revelar.reveal('.efeito_txt_frase', 
+{
+    duration: 2000,
+    delay: 600,
+})

@@ -22,6 +22,7 @@
 
 
     <body>
+        <audio id="audio" src="../static/audio/intro.mp3" autoplay loop></audio>
         <header>
             <div class="meu_nome efeito_txt_topo">
                 <div class="funcao efeito_txt_topo">
@@ -29,25 +30,42 @@
             </div>
         </header>
 
-        <div class="linha"></div>
+        <div class="linha_pri efeito_divp_topo"></div>
+        <div class="linha_seg efeito_divs_topo"></div>
 
+           
         <main>
             <div class="menu">    
-                <div class="botao_sobre" > <span> sobre </span> </div>
-                <div class="botao_projetos "> <span> projetos </span> </div>
-                <div class="botao_contatos "> <span> contato </span> </div>
+                <button class="botao_sobre" > <span> sobre </span> </button>
+                <button class="botao_projetos "> <span> projetos </span> </button>
+                <button class="botao_contatos "> <span> contato </span> </button>
             </div>
 
+            <div class="frase_center">
+                <div class="frase efeito_txt_frase"> 
+                    <p> "Meu cérebro é mais do que algo meramente mortal, e o tempo mostrará isso."  </p>
+                </div>
+            </div>
+            
 
             <div class="conteudo">
-                <div class="fundo_intro">
-                    <h1 class="txt_intro">Introdução</h1>
+
+                
+                <div class="sessao_pri"> 
+                    <div class="fundo_sobre">
+                        <h1 class="txt_sobre"> < Sobre_mim > </h1>
+                        <div class="texto_sobre">
+                            <p> Olá, meu nome é Gihu, sou um estudante de programação e estou aprendendo a desenvolver sites. 
+                                Este é o meu portfólio, onde você pode ver alguns dos meus projetos e aprender mais sobre mim.
+                                Estou sempre buscando melhorar minhas habilidades e aprender coisas novas. 
+                                Espero que você goste do meu trabalho!
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
                 
-                <div class="txt_sobre">
-                    <h1>Sobre</h1>
-                    <h2>Histórico Acadêmico</h2>
-                </div>
+                 
 
                 <div class="fundo_att">
                     <h1 class="txt_att">Últimas Atualizações</h1>
@@ -58,7 +76,6 @@
             </div>
             
             
-            <p>This is the home page of our website. Here you can find information about our services and how to contact us.</p>
         </main>
 
         <footer>
