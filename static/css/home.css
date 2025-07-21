@@ -165,11 +165,74 @@ span {
     min-height: 70vh;
 }
 
+.sessao_pri{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px;
+    margin-top: 100px;
+}
+
 .fundo_sobre{
-    margin: 100px;
+   
     border-radius: 20px;
     background-image: linear-gradient(25deg, #aa5f3a, #bf8b4d, #d2b661, #e3e376);
     background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo_sobre{
+    padding: 20px;
+}
+
+.fundo_linguagens{
+    
+    border-radius: 20px;
+    background-image: linear-gradient(25deg, #aa5f3a, #bf8b4d, #d2b661, #e3e376);
+    background-size: cover;
+    width: 30%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_laptop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../image/laptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 40vh;
+}
+
+.sessao_seg{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px;
+}
+
+.fundo_projetos{
+    border-radius: 20px;
+    background-image: linear-gradient(25deg, #aa5f3a, #bf8b4d, #d2b661, #e3e376);
+    background-size: cover;
+    width: 70%;
+    height: 100vh;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -190,14 +253,14 @@ h1{
 /* --------------------------------------------------------------- */
 /* Efeito scrollreveal - static/javascript/reveal.js */
 
-.efeito_txt_topo, .efeito_divp_topo, .efeito_divs_topo, .efeito_txt_frase{
+.efeito_txt_topo, .efeito_divp_topo, .efeito_divs_topo, .efeito_txt_frase, .efeito_div_pri{
     visibility: hidden;
 }
 
 /* --------------------------------------------------------------- */
 /* Contatos - Última sessão */
 footer{
-    background-color: #4e4b47;
+    background-color: #1e1c1a;
     width: 100vw;
     height: 100vh;
 }
@@ -212,4 +275,16 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.img_correio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../image/correio.png");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vh;
+    height: 80vh;
 }

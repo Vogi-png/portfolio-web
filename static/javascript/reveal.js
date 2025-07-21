@@ -26,3 +26,11 @@ revelar.reveal('.efeito_txt_frase',
     duration: 2000,
     delay: 600,
 })
+
+
+revelar.reveal('.efeito_div_pri', 
+{
+    duration: 2000,
+    origin: 'left',
+    distance: '50px',
+})
