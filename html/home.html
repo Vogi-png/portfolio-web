@@ -86,25 +86,37 @@
         </main>
 
         <footer>
-        
             <div class="redes_sociais">
-                    
                 <a class="github" href="https://github.com/Vogi-png" target="_blank">
                     <i class="bi bi-github"></i>
                 </a>
-                    
                 <a class="linkedin" href="https://www.linkedin.com/in/nomenoturno/" target="_blank">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                    
                 <a class="email" href="mailto:gihuworkplace@gmail.com" target="_blank">
                     <i class="bi bi-envelope-at-fill"></i>
                 </a>
-
-                
             </div>
-            <div class="img_correio"></div>
 
+            <div class="container_contato">
+                <div class="form_mensagem">
+                    <form action="https://formsubmit.co/gihuworkplace@gmail.com" method="POST">
+                        <h2>< Fale_Comigo ></h2>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome completo" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="seu.email@exemplo.com" required>
+                        
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Deixe sua mensagem aqui..." required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="img_correio"></div>
+            </div>
         </footer>
         <script src="../static/javascript/home.js" defer></script>
         <script src="../static/javascript/reveal.js" defer></script>
