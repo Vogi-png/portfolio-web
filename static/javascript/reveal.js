@@ -46,5 +46,5 @@ revelar.reveal('footer',
 {
     duration: 2000,
     origin: 'bottom',
-    distance: '50px',
+    distance: '20px',
 })

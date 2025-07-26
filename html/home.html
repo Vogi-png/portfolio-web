@@ -27,7 +27,7 @@
 
 
     <body>
-        <audio id="audio" src="../static/audio/intro.mp3" autoplay loop></audio>
+        <!-- Começo capa + nome -->
         <header>
             <div class="meu_nome efeito_txt_topo">
                 <div class="funcao efeito_txt_topo">
@@ -68,17 +68,127 @@
                         </div>
                     </div>
 
-                    <div class="fundo_linguagens efeito_divs_topo efeito_div_pri"> 
-                        <h1 class="txt_linguagens"> < Linguagens > </h1>
+                    <!-- Carrossel Linguagens -->
+                    <div class="fundo_linguagens efeito_divs_topo efeito_div_pri">
+                        <div id="carrossel_linguagens" class="carrossel_linguagens">
+                            
+                            <!-- Inglês -->
+                            <div class="idioma-card">
+                                <h3>< Inglês ></h3>
+                                <div class="habilidade">
+                                    <p>Fala</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escrita</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escuta</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- Espanhol -->
+                                <div class="idioma-card">
+                                <h3>< Espanhol ></h3>
+                                <div class="habilidade">
+                                    <p>Fala</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escrita</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escuta</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- Francês -->
+                                <div class="idioma-card">
+                                <h3>< Francês ></h3>
+                                <div class="habilidade">
+                                    <p>Fala</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escrita</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                                <div class="habilidade">
+                                    <p>Escuta</p>
+                                    <div class="nivel">
+                                    <span class="dot filled"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    <span class="dot empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+
+                        </div>
                     </div>
                 </div>
 
-                <!-- EM CONSTRUÇÃO INICIO | Carrossel -->
-
+                <!-- Carrossel Projetos -->
                 <div class="body_carrossel">
                     <div class="container swiper">
                         <div class="card-wrapper">
-                            <!-- Card slides container -->
+                        
                             <ul class="card-list swiper-wrapper">
                                 <li class="card-item swiper-slide">
                                     <a href="https://github.com/Vogi-png/byteshop-software" class="card-link">
@@ -88,6 +198,7 @@
                                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                                     </a>
                                 </li>
+
                                 <li class="card-item swiper-slide">
                                     <a href="https://github.com/Vogi-png/catpawn-game" class="card-link">
                                         <img src="../image/catpawn.jpg" alt="Card Image" class="card-image">
@@ -96,6 +207,7 @@
                                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                                     </a>
                                 </li>
+
                                 <li class="card-item swiper-slide">
                                     <a href="https://github.com/Vogi-png/pingo-app" class="card-link">
                                         <img src="../image/pingo.jpg" alt="Card Image" class="card-image">
@@ -104,6 +216,7 @@
                                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                                     </a>
                                 </li>
+
                                 <li class="card-item swiper-slide">
                                     <a href="#" class="card-link">
                                         <img src="images/gamer.jpg" alt="Card Image" class="card-image">
@@ -112,6 +225,7 @@
                                         <button class="card-button material-symbols-rounded">arrow_forward</button>
                                     </a>
                                 </li>
+
                                 <li class="card-item swiper-slide">
                                     <a href="#" class="card-link">
                                         <img src="images/editor.jpg" alt="Card Image" class="card-image">
@@ -122,20 +236,16 @@
                                 </li>
                             </ul>
 
-                            <!-- Pagination -->
+                            
                             <div class="swiper-pagination"></div>
 
-                            <!-- Navigation Buttons -->
+                            <!-- Botões -->
                             <div class="swiper-slide-button swiper-button-prev"></div>
                             <div class="swiper-slide-button swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- EM CONSTRUÇÃO FIM -->
                 
-
             </div>
         </main>
 
