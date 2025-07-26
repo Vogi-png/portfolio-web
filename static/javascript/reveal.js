@@ -34,3 +34,17 @@ revelar.reveal('.efeito_div_pri',
     origin: 'left',
     distance: '50px',
 })
+
+revelar.reveal('.body_carrossel', 
+{
+    duration: 2000,
+    origin: 'left',
+    distance: '50px',
+})
+
+revelar.reveal('footer', 
+{
+    duration: 2000,
+    origin: 'bottom',
+    distance: '50px',
+})
